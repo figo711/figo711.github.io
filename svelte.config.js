@@ -6,7 +6,10 @@ const dev = process.argv.includes('dev');
 const config = {
 	kit: {
 		appDir: 'site',
-		adapter: adapter()
+		adapter: adapter({
+			pages: 'site',
+			assets: 'site',
+		})
 	}
 };
 
